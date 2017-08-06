@@ -43,7 +43,9 @@ a {
 		color: #f76f76;
 	}
 
-h1,
+h1 {
+	font-size: 45px;
+}
 h2 {
 	font-size: 24px;
 }
@@ -202,27 +204,6 @@ h2 {
 	-o-animation: fadein 1s; /* Opera < 12.1 */
 	animation: fadein 1s;
 }
-.fadein2 {
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 2s; /* Firefox < 16 */
-	-ms-animation: fadein 2s; /* Internet Explorer */
-	-o-animation: fadein 2s; /* Opera < 12.1 */
-	animation: fadein 2s;
-}
-.fadein3 {
-	-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 3s; /* Firefox < 16 */
-	-ms-animation: fadein 3s; /* Internet Explorer */
-	-o-animation: fadein 3s; /* Opera < 12.1 */
-	animation: fadein 3s;
-}
-.fadein4 {
-	-webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 4s; /* Firefox < 16 */
-	-ms-animation: fadein 4s; /* Internet Explorer */
-	-o-animation: fadein 4s; /* Opera < 12.1 */
-	animation: fadein 4s;
-}
 
 .outer {
     display: table;
@@ -240,4 +221,8 @@ h2 {
     margin-left: auto;
     margin-right: auto; 
     width: /*whatever width you want*/;
+}
+
+p:nth-child(N) > p {
+  animation-delay: [1 * N]s;
 }

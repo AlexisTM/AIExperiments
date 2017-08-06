@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<base href="http://alexistm.github.io/lab/"> 
 		<meta charset="utf-8">
 		<title>AlexisTM's Lab</title>
 		<meta name="description" content="A repository of experiments done by AlexisTM">
@@ -12,20 +13,13 @@
 
 	<body>
 		<div class="meny">
-			<h1>Artificial Intelligence</h1>
-			<h3>NEAT</h3>
+			<h2>Artificial Intelligence</h2>
 			<ul>
-				<li><a href="ai/neat-synaptics/">Neat synaptics</a></li>
-				<li><a href="ai/neat-neataptic/">Neat neataptic</a></li>
-				<li><a href="ai/neataptic-vs-synaptics/">Fight between ai</a></li>
+				<li><a href="ai/fish-neataptics/">Fish synaptics</a></li>
+				<li><a href="ai/fish-synaptics/">Fish neataptic</a></li>
+				<li><a href="ai/fish-neataptic-vs-synaptics/">Fight between ai</a></li>
 			</ul>
 			<h1>Artificial Intelligence</h1>
-			<h3>NEAT</h3>
-			<ul>
-				<li><a href="ai/neat-synaptics/">Neat synaptics</a></li>
-				<li><a href="ai/neat-neataptic/">Neat neataptic</a></li>
-				<li><a href="ai/neataptic-vs-synaptics/">Fight between ai</a></li>
-			</ul>
 		</div>
 		<div class="meny-arrow"></div>
 
@@ -34,38 +28,27 @@
 				<div class="outer">
 					<div class="middle">
 						<div class="inner">
-							<h1>To start your journey, swipe left.</h1>
+							<h1>Swipe left to enter the experiment den</h1>
+							<h2></h2>
 						</div>
 					</div>
 				</div>
 				
 			</article>
-			<article id="welcome-message">
-				<h1 class="fadein1">Welcome is AlexisTM's den</h1>
-			</article>
 		</div>
 
-		<script src="js/meny.js"></script>
+		<script src="js/meny.min.js"></script>
 		<script>
-			// Hide welcome message
-			document.getElementById("welcome-message").style.display = "none";
 			// Create an instance of Meny
 			var meny = Meny.create({
 				menuElement: document.querySelector( '.meny' ),
 				contentsElement: document.querySelector( '.contents' ),
 				position: 'right',
 				height: 200,
-				width: 260,
+				width: 700,
 				threshold: 40,
 				mouse: true,
 				touch: true });
-
-			// Show the welcome message
-			// Hide the placeholder
-			meny.addEventListener('open', function(){ 
-				document.getElementById("welcome-message").style.display = "";
-				document.getElementById("initial-placeholder").style.display = "none";
-				});
 		</script>
 	</body>
 </html>
